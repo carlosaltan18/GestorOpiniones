@@ -1,0 +1,496 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestiónOpiniones",
+    "dateExported": "2024-03-01T17:19:47.923Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "a9502fba-ada4-41ef-9cc5-05f743e7bac5",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-02-29T03:00:37.368Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b5a529d2-b067-4122-8ff5-4a424d0bdd0e",
+            "name": "comment",
+            "containerId": "",
+            "created": "2024-02-29T03:00:43.592Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "3379b526-2fef-4164-a16b-b43f52fe50f6",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-02-29T03:01:08.273Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "3e4fdef0-9081-4bf0-bca8-302845a08c78",
+            "name": "publication",
+            "containerId": "",
+            "created": "2024-02-29T03:01:16.561Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b6e8d4c4-4cdb-419b-a5a2-1bf97497f34e",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "a9502fba-ada4-41ef-9cc5-05f743e7bac5",
+            "name": "register",
+            "url": "user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-29T04:46:19.913Z",
+            "modified": "2024-03-01T00:01:00.548Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Daniel"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Altán"
+                    },
+                    {
+                        "name": "username",
+                        "value": "dan"
+                    },
+                    {
+                        "name": "password",
+                        "value": "caralt123"
+                    },
+                    {
+                        "name": "email",
+                        "value": "dan@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3d803cac-4ffb-4f75-91f6-9d172e17dbb9",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "a9502fba-ada4-41ef-9cc5-05f743e7bac5",
+            "name": "login",
+            "url": "user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-29T04:50:37.966Z",
+            "modified": "2024-03-01T13:58:29.222Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "dan"
+                    },
+                    {
+                        "name": "password",
+                        "value": "caralt123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "87c67036-5948-4f4c-a16e-8c8f1b2858d4",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "a9502fba-ada4-41ef-9cc5-05f743e7bac5",
+            "name": "updateUser",
+            "url": "user/updateUser",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-29T04:51:39.164Z",
+            "modified": "2024-03-01T17:17:40.698Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMTM0NTAsImV4cCI6MTcwOTMyNDI1MH0.AZuScv6DyHg75abJcnTiZpQaUvVwlidK01cB45Bupfc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "surname",
+                        "value": "Cortez"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "30e3b0e1-11ab-492b-96a3-f4b86a3aa947",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "3379b526-2fef-4164-a16b-b43f52fe50f6",
+            "name": "addCateogory",
+            "url": "category/addCategory",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-29T23:01:28.285Z",
+            "modified": "2024-03-01T13:33:36.284Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkyOTk5MTQsImV4cCI6MTcwOTMxMDcxNH0.iyFe1X-NO1SoDhcG9RzzJvlgbFkp3ZtdkyDQX--y22k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "categoryName",
+                        "value": "Series "
+                    },
+                    {
+                        "name": "description",
+                        "value": "Publication of tv shows, series, etc."
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "13619e49-951d-47da-beb6-13b690e4c110",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "3379b526-2fef-4164-a16b-b43f52fe50f6",
+            "name": "updateCategory",
+            "url": "category/updateCategory/65e1d95f2a111932abf102a9",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-29T23:04:34.506Z",
+            "modified": "2024-03-01T17:18:37.250Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkyOTk5MTQsImV4cCI6MTcwOTMxMDcxNH0.iyFe1X-NO1SoDhcG9RzzJvlgbFkp3ZtdkyDQX--y22k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "description",
+                        "value": "Publication Siries"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "df6a145c-1742-4dff-8567-52357ef91c96",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "3379b526-2fef-4164-a16b-b43f52fe50f6",
+            "name": "deleteCategory",
+            "url": "category/deleteCategory/65e1d9312a111932abf102a3",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-02-29T23:05:41.603Z",
+            "modified": "2024-03-01T13:56:12.753Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkyOTk5MTQsImV4cCI6MTcwOTMxMDcxNH0.iyFe1X-NO1SoDhcG9RzzJvlgbFkp3ZtdkyDQX--y22k"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "06ab0c1a-c2c4-465b-81e7-28a87b947115",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "3e4fdef0-9081-4bf0-bca8-302845a08c78",
+            "name": "addPublication",
+            "url": "publication/addPublication",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-29T23:18:46.711Z",
+            "modified": "2024-03-01T13:34:21.936Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkyOTk5MTQsImV4cCI6MTcwOTMxMDcxNH0.iyFe1X-NO1SoDhcG9RzzJvlgbFkp3ZtdkyDQX--y22k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Avatar new serie"
+                    },
+                    {
+                        "name": "content",
+                        "value": "The avatar live action of Netflix"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e1d9312a111932abf102a3"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e39120eb-51fc-4f32-b0d7-6115863685a7",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "3e4fdef0-9081-4bf0-bca8-302845a08c78",
+            "name": "updatePublication",
+            "url": "publication/updatePublication/65e1d95f2a111932abf102a9",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-02-29T23:37:35.355Z",
+            "modified": "2024-03-01T13:37:46.418Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwMGVhODIzYTdkZjQ3NWIxMjE3NjgiLCJ1c2VybmFtZSI6ImNhcmFsdCIsIm5hbWUiOiJDYXJsb3MiLCJpYXQiOjE3MDkyOTk0NDQsImV4cCI6MTcwOTMxMDI0NH0.Q3v0bqPPpSHOCh0tEDyf3cx1r4ygud1vZ3g8xdl2BqY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "content",
+                        "value": "A live action serie of avatar in netflix"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b0cec47-0148-41b2-8f21-8285ea79b8f3",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "3e4fdef0-9081-4bf0-bca8-302845a08c78",
+            "name": "deletePublication",
+            "url": "publication/deletePublication/65e1d95f2a111932abf102a9",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-01T00:25:16.939Z",
+            "modified": "2024-03-01T13:58:38.738Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMDE1MDksImV4cCI6MTcwOTMxMjMwOX0.6657d9dpTJeLCH8zHu37wHo_PPIrFDlwTGiqYin9SFM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "66f07e22-060c-47da-8bf2-23a9ab008ced",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "b5a529d2-b067-4122-8ff5-4a424d0bdd0e",
+            "name": "addComment ",
+            "url": "comment/addComment",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-01T01:20:02.117Z",
+            "modified": "2024-03-01T17:19:10.912Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMTIzMjIsImV4cCI6MTcwOTMyMzEyMn0.apLsvYj1HGqKtbRN5Zvs0KxeSGRDT9zMhS6QvOMYBAY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65e1d8b82a111932abf1029c"
+                    },
+                    {
+                        "name": "comment",
+                        "value": "Actualization of avatar serie"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3c15b971-ba11-4efd-bfc9-8a707b49d890",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "b5a529d2-b067-4122-8ff5-4a424d0bdd0e",
+            "name": "updateComment",
+            "url": "comment/updateComment/65e12eb102d691b3c1bbb82c",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-03-01T01:26:33.290Z",
+            "modified": "2024-03-01T17:19:27.897Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwMGVhODIzYTdkZjQ3NWIxMjE3NjgiLCJ1c2VybmFtZSI6ImNhcmFsdCIsIm5hbWUiOiJDYXJsb3MiLCJpYXQiOjE3MDkzMDE0OTIsImV4cCI6MTcwOTMxMjI5Mn0.S2--mqKw7hT7p5AXtfX4W0v2tP3_uMIM-HajyoznipI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "The live action is the best"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc8a38c1-e140-4a63-aed3-5d3899aa8a1c",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "b5a529d2-b067-4122-8ff5-4a424d0bdd0e",
+            "name": "deleteComment",
+            "url": "comment/deleteComment/65e12eb102d691b3c1bbb82c",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2024-03-01T01:30:42.089Z",
+            "modified": "2024-03-01T14:12:08.551Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMDIzMTksImV4cCI6MTcwOTMxMzExOX0.ZtBLmaBk1qQZAhPgcNwmZeGsmYYvgBmwvnkH1ZgyEzk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7bdb1ec7-4108-4387-a976-0eb9fe8f9a17",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "b5a529d2-b067-4122-8ff5-4a424d0bdd0e",
+            "name": "getComments",
+            "url": "comment/getComments",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-01T03:39:46.926Z",
+            "modified": "2024-03-01T16:58:51.324Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMTIzMjIsImV4cCI6MTcwOTMyMzEyMn0.apLsvYj1HGqKtbRN5Zvs0KxeSGRDT9zMhS6QvOMYBAY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b43efd14-2e30-4f81-8129-4be77815ea70",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "3379b526-2fef-4164-a16b-b43f52fe50f6",
+            "name": "getCategory",
+            "url": "category/getCategory",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-01T03:41:42.820Z",
+            "modified": "2024-03-01T16:59:56.506Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMTIzMjIsImV4cCI6MTcwOTMyMzEyMn0.apLsvYj1HGqKtbRN5Zvs0KxeSGRDT9zMhS6QvOMYBAY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8320566d-8b9d-401f-8641-812e7034dd70",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "3e4fdef0-9081-4bf0-bca8-302845a08c78",
+            "name": "getPublications",
+            "url": "publication/getPublication",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-03-01T03:43:47.220Z",
+            "modified": "2024-03-01T17:01:00.729Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMTIzMjIsImV4cCI6MTcwOTMyMzEyMn0.apLsvYj1HGqKtbRN5Zvs0KxeSGRDT9zMhS6QvOMYBAY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "33c4c446-fa6f-4220-8cb6-e3737aca9fa3",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "a9502fba-ada4-41ef-9cc5-05f743e7bac5",
+            "name": "getUsers",
+            "url": "user/getUsers",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-01T03:45:54.724Z",
+            "modified": "2024-03-01T17:17:47.670Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMWFiZTM3N2JlZjQ3NGFkNjM4YjgiLCJ1c2VybmFtZSI6ImRhbiIsIm5hbWUiOiJEYW5pZWwiLCJpYXQiOjE3MDkzMTM0NTAsImV4cCI6MTcwOTMyNDI1MH0.AZuScv6DyHg75abJcnTiZpQaUvVwlidK01cB45Bupfc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "25911aac-feb2-449c-9ad4-d1dbfc022ba7",
+            "colId": "9bfed476-a0f9-4222-90f2-f5ee595ff601",
+            "containerId": "a9502fba-ada4-41ef-9cc5-05f743e7bac5",
+            "name": "updatePassword",
+            "url": "user/updatePassword",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-03-01T13:25:21.268Z",
+            "modified": "2024-03-01T13:29:13.827Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwMGVhODIzYTdkZjQ3NWIxMjE3NjgiLCJ1c2VybmFtZSI6ImNhcmFsdCIsIm5hbWUiOiJDYXJsb3MiLCJpYXQiOjE3MDkyOTk0NDQsImV4cCI6MTcwOTMxMDI0NH0.Q3v0bqPPpSHOCh0tEDyf3cx1r4ygud1vZ3g8xdl2BqY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "password",
+                        "value": "caralt123"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "caralt12"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656/"
+        }
+    }
+}
